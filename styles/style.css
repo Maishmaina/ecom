@@ -1,0 +1,614 @@
+																					/* 
+*Juakali system front end css
+
+ */
+ body{
+ 	font-family: "Roboto", Helvetica, Arial, sans-serif;
+ 	font-size: 14px;
+ 	line-height: 1.42857143;
+ 	background:#f0f0f0;
+ 	overflow-x: hidden;
+
+
+ }
+ /* for thr top */
+ #top{
+ 	background:#000000;
+ 	padding: 10px 0;
+ }
+ .offer{
+ 	text-transform:uppercase;
+ 	color:#ffff;
+ }
+ #top .offer .btn{
+ 	text-transform: uppercase;
+
+ }
+ @media (max-width:991px){
+ 	#top .offer{
+ 		margin-bottom:5px;
+ 	}
+ 	#top{
+ 		font-size:12px;
+ 		text-align: center;
+ 	}
+ 	#top ul.menu{
+     text-align: center;
+ 	}
+ }
+ #top a{
+ 	color:#fff;
+ 	text-decoration: none;
+
+ }
+ #top ul.menu{
+padding-top:5px;
+margin: 0;
+text-align:right;
+font-size: 12px
+list-style:none;
+ }
+
+ #top ul.menu> li{
+display:inline-block;
+ }
+ #top ul.menu> li a{
+ 	color:#eeeeee;
+
+ }
+ #top ul.menu li +li:before{
+ 	content: "|\00a0";
+ 	padding:0 5px;
+ 	color:#f7f7f7;
+ }
+ /* for the min navbar match */
+ .min-navbar{
+ 	background:#393838;
+ }
+ /* for the cart button  */
+ .btnEdit{
+ 	border-radius: 100%;
+ }
+ /*  for the hover0 */
+ 
+ .nav-item:hover{
+ 	transition: all 0.9s ease;
+ 	transform: scale(1.1);
+ }
+ .floatz{
+ 	z-index: 3;
+ }
+ /* this isthe edited css for the  animated search icn */
+ .wrapper{
+	position: absolute;
+	left:10;
+	right: 10;
+	top:-10;
+	padding-top: -10px;
+	margin-top: -10px;
+	display: none;
+	z-index: 2;
+}
+.serach-box{
+	width:300px;
+    height:50px;
+    position:relative;
+
+}
+
+.input{
+	position: absolute;
+	top:45px;
+	right:50px;
+	box-sizing:border-box;
+	width: 0px;
+	height:50px;
+	border:3px solid #62d474;
+	border-radius: 50px;
+	padding: 0 20px;
+	outline:none;
+	font-size:18px;
+	color:#29313a;
+	transition:all 0.8s ease;
+}
+::-webkit-input-placeholder{
+	color:#62d474;
+}
+::-moz-input-placeholder{
+	color:#62d474;
+}
+::-ms-input-placeholder{
+	color:#62d474;
+}
+
+.btn-serach{
+	position: absolute;
+	width:50px;
+	height:50px;
+	background:#62d474;
+	border-radius: 50%;
+	top:44px;
+	right:45px;
+	text-align: center;
+	cursor: pointer;
+	line-height: 50px;
+	font-size: 20px;
+	color:#fff;
+	transition: all 0.8s ease;
+}
+/* create the active toggleclass */
+.input.active{
+	width:350px;
+	right:60px;
+}
+.btn-serach.animatez{
+	transform:rotate(360deg);
+	right:60px;
+}
+#show-icn{
+	display:none;
+}
+/* for the  serachbutton */
+.editBtn{
+	border-radius: 50%;
+	background:#62d474;
+	border:none;
+}
+/*style for the there div of col-4 advantages */
+.card{
+	background:#fff;
+	margin:0 0 30px;
+	border:solid 1px #e6e6e6;
+	box-sizing:border-box;
+	padding:20px;
+	box-shadow:0 1px 5px rgba(0,0,0,0.1); 
+}
+#advantages{
+	text-align:center;
+}
+#advantages .card .icon{
+	position:absolute;
+	font-size:120px;
+	width:100%;
+	text-align: center;
+	top:-20px;
+	left: 0;
+	height:100%;
+	float:left;
+	color:#eeeeee;
+	transition:all 0.2s ease-out;
+	z-index: 1;
+	box-sizing: border-box;
+
+}
+/* for the additional slider for the text box  */
+.slidez{
+	position:relative;
+	z-index: 2;
+}
+
+#advantages .card h3{
+	position: relative;
+	margin:0 0 20px;
+	font-weight: 300px;
+	text-transform:uppercase;
+	z-index: 2;
+}
+#advantages .card h3 a:hover{
+	text-decoration:none;
+
+}
+#advantages .card p{
+	position:relative;
+	color:#555555;
+	z-index: 2;
+
+}
+/* design for the product */
+#hot h2{
+	text-transform:uppercase; 
+	text-align: center;
+	font-size: 30px;
+	color:#4993e4;
+	font-weight: 100;
+}
+.alignadd{
+	border: 1px solid #fff;
+	background: #94B3D2;
+	color:#CF10E0;
+}
+.alignaddlink{
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.cliper-cat{
+	background: #04f7f2;
+	color: #fff;
+	clip-path: polygon(10% 0, 90% 0, 100% 100%, 0 100%);
+}
+.bg-store{
+	background: #c6c5b4;
+}
+/* css for the footer */
+footer{
+	background-color: #000;
+
+}
+.three-col{
+	color:#fff;
+	padding:10px;
+	margin-top: 40px;
+}
+.three-col h4{
+	letter-spacing:2px ;
+	color:#ff4f81;
+	text-align: center;
+}
+.three-col p{
+	text-align: center;
+
+}
+.three-col input[type="email"]{
+	width: 70%;
+	height:38px;
+	display:inline-block;
+	background-color:#fff;
+	border:1px solid #ff4f81;
+	outline:none;
+	padding:0.5px;
+	font-size:13px;
+	color:#999999; 
+}
+.btn1{
+	color:#dec4be;
+	font-size:15px;
+	border:1px solid #ff4f81;
+	width:14%;
+	height:38px;
+	text-decoration:none;
+	background-color: #ff4f81;
+}
+.mid-row{
+border:4px solid #ff4f81;
+color:#000;
+padding:30px;
+text-align: center;
+background-color: #fff;
+margin-top: 10px;	
+}
+.mid-row h4{
+ letter-spacing:2px ;
+	color:#ff4f81;
+}
+.special-icon i{
+	margin-top: 0.5em;
+	width:40px;
+	height:40px;
+	text-align: center;
+	line-height: 35px;
+	border: 1px solid #ff4f81;
+    color:#ff4f81;
+    font-size:10px;
+    cursor:pointer;
+}
+.special-icon i{
+	color:#000;
+
+}
+.contact{
+	color:#fff;
+	padding:10px;
+	padding-left: 10px; 
+	margin-top: 40px;
+	
+}
+.contact h4{
+	letter-spacing:2px ;
+	color:#ff4f81;
+	
+}
+
+
+.design{
+	margin-top: 0.5em;
+	text-align: center;
+	line-height: 35px;
+	border: 1px solid #ff4f81;
+    color:#ff4f81;
+    font-size:1.2em;
+    cursor:pointer;
+}
+.number{
+	color:#ff4f81;
+}
+.number a{
+	color: #ff4f81;
+}
+/* for footer */
+.footerlink {
+text-decoration: none;
+color: #04FBCF;
+
+}
+<!---for the coyright css --->
+ #coyright{
+ background: #352F5C;
+ color: #FFFFFF;
+}
+/* ********this is the kitchen product shop style */
+.kitchen{
+	padding:8px 15px;
+	margin-bottom:#ffffff;
+	border-radius: 0;
+	box-shadow: 0 1px 5px rgba(0,0,0,0.5);
+	display:inline-block;
+}
+.kitchen> li+ li:before{
+	content:">\00a0";
+	color:#cccccc;
+}
+.inlineshop{
+	display:inline-block;
+}
+@media (max-width: 991px){
+	.kitchen{
+		padding-top:8px 0;
+		margin: 0;  
+	}
+}
+/* this is the products categories sidebar */
+.sidebar-menu{
+	box-sizing: border-box;
+	box-shadow: 0 1px 5px rgba(0,0,0,0.5);
+}
+/* product design in the shop.php with animation also exteds to index.php */
+.product_detail{
+			position: relative;
+			 background:#fff;
+			 box-shadow: 0 5px 15px rgba(0,0,0,.25);
+			 border-radius: 5px; 
+			 width:180px;
+			 height: 220px;
+			overflow: hidden; 
+		}
+		.product_detail .imgbox{
+        box-sizing: border-box;
+		}
+		.product_detail.imgbox img{
+			display: block;
+			width: 90%;
+			margin-left: 7px
+		}
+		.detail{
+			position:absolute;
+			width: 100%;
+			bottom:-130px;
+			background: #fff;
+			padding:10px;
+			box-sizing: border-box;
+			box-shadow: 0 0 0 rgba(0,0,0,0.5);
+			transition: 0.5s;
+			}
+			 .product_detail:hover .detail{
+			           	bottom: 0;
+			           	box-shadow: 0 -5px 15px rgba(0,0,0,0);
+			
+			           } 
+			.detail h2{
+				margin: 0;
+				padding: 0;
+				font-size: 16px;
+				width:100%;
+			}
+			.detail h2 span{
+				font-size:12px;
+				color:#000;
+				font-weight: normal;
+			}
+			.price{
+				float:right;
+				font-weight:bold;
+				color:#ff4faf;
+			}
+			.labell{
+				display: block;
+				margin-top: 5px;
+				font-weight: bold;
+			}
+          .ulproduct{
+          	display: flex;
+          	margin: 0;
+          	padding:0;
+          }
+          .ulproduct li{
+          	list-style: none;
+          	margin:2px 2px;
+          	font-size:12px;
+          	color:#000;
+          }
+          
+           .productlink{
+           	display:block;
+           	padding:2px;
+           	color:#fff;
+           	margin: 10px 0 0 ;
+           	background: #ff4faf;
+           	text-align: center;
+           	text-decoration: none;
+           	transition: 0.3s;
+           	cursor:pointer;
+           }
+          /* assign design shop product posistion */
+          
+        
+      @media(max-width: 750px){
+      	.scoller{
+      		display:inline-block!important;
+      	}
+      }
+#mainImage{
+	box-shadow: 0 1px 5px rgba(0,0,0,0.7);
+}
+#thumbs{
+	box-shadow: 0 1px 5px rgba(0,0,0,0.2);
+	border:solid 2px transparent;
+}
+/*for the cart style enditing */
+/* #cart .table tbody  */
+/* endit the side bar for the my+account */
+.active_myaccount{
+	background: red!important;
+	color:#0DEBCE!important;
+}	
+//STYLE THE FILTER IN THE SIDEBAR .....
+.nav.category-menu{
+	margin-top: 0px;
+
+}	
+.scroll-menu{
+	height: 100px;
+	overflow-y:scroll;
+}																
+.checkbox span{
+	display:inline-block;
+	vertical-align: middle;
+	position: relative;
+	padding-left: 1px;
+	margin-left: -15px;
+}
+.checkbox span::before{
+	content: "";
+	display: inline-block;
+	position: absolute;
+	width: 14px;
+	height: 14px;
+	left:0;
+	margin-left: -15px;
+	border: 2px solid #cccccc;
+	border-radius: 3px;
+	background-color: #fff;
+	transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+    cursor: pointer;
+}
+.checkbox span::after{
+   display: inline-block;
+   position: absolute;
+   width: 16px;
+   height: 16px;
+   left: 0;
+   top: 0;
+   margin-left: -15px;
+   padding-left:3px;
+   padding-top: 1px;
+   font-size:11px;
+   color:#555555;
+   cursor: pointer;
+}
+.checkbox input[type="checkbox"]{
+	opacity:0;
+	z-index:1;
+	cursor: pointer;
+}
+.checkbox input[type="checkbox"]:focus + span::before{
+	outline: thin dotted;
+	outline: 5px auto;
+	outline-offset: -2px;
+}
+.checkbox input[type="checkbox"]:checked + span::after{
+font-family: "FontAwesome";
+content: "\221A";
+color: red;
+}
+.checkbox-primary input[type="checkbox"]:checked + span::before{
+	background-color: #337ab7;
+	border-color: #337ab7;
+	color: red;
+}
+.checkbox-primary input[type="checkbox"]:checked + span::after{
+	color: #fff;
+}
+/*
+*This is the label Style added in the product card.
+*/
+.label{
+	text-decoration: none;
+	position: absolute;
+	top: 30px;
+	padding-left: 40px;
+	z-index: 20;
+}
+.label .label-backgroud{
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.label .thelabel{
+	position: relative;
+	width: 100px;
+	padding:2px 50px 2px 12px; 
+	margin:5px 50px 10px -45px;
+	color: #fff;
+	font-size: 18px;
+	font-weight: bold;
+	background: #337ab7;
+	text-shadow:0px 1px 2px #bbb;
+}
+.label .thelabel:before,
+.label .thelabel:after{
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 0;
+}
+.label .thelabel:after{
+	left: 0px;
+	top: 100%;
+	border-width: 5px 3px;
+	border-style: solid;
+	border-color:#2d7b6b #2d7b6b transparent transparent;
+}
+.label.sale{
+	top: 0;
+}
+/*
+*style for the pass icon
+*/
+
+.tick1{
+	color:red; 
+}
+.cross1{
+	color:red; 
+}
+.tick2{
+	color:red; 
+}
+.cross2{
+	color:red; 
+}
+/*
+*Passwords Strength style for the customers
+
+
+*/
+#meter_wrapper{
+	width: 202px;
+	height: 39px;
+	margin:0;
+	border-radius:3px;
+
+}
+#meter{
+width:0px;
+height: 18px;
+border-radius: 2px;	
+}
+#pass_type{
+	font-size: 18px;
+	margin-top: 10px;
+	position: absolute;
+	top: 0;
+	right: 90px;
+	margin-bottom:10%;
+	color: grey;
+}
